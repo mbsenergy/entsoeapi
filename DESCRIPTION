@@ -10,7 +10,10 @@ License: MIT + file LICENSE
 Imports: 
     data.table,
     httr,
-    xml2
+    xml2,
+    crayon,
+    glue,
+    magrittr
 Encoding: UTF-8
 Language: en-US
 LazyData: true

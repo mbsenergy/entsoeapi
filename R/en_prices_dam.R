@@ -73,7 +73,7 @@ entsoe_dam_prices = function(country, from_data, to_data, api_key = Sys.getenv('
   result <- extract_xml_data(res_content)
 
   # Process the extracted data and format it
-  DT = result[, .(DATE = format(suppressWarnings(strptime(StartTime, "%Y-%m-%dT%H:%MZ")), "%Y-%m-%d"),
+  DT = result[, .(COUNTRY = country, DATE = format(suppressWarnings(strptime(StartTime, "%Y-%m-%dT%H:%MZ")), "%Y-%m-%d"),
                   HOUR = Position, VALUE = Price, UNIT = 'EUR')]
 
   # Display a success message with formatting using glue and crayon
