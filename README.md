@@ -64,15 +64,15 @@ You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("krose/entsoeapi")
+devtools::install_github("mbsenergy/entsoeapi")
 ```
 
 ## Security token
 
-Read [here](https://transparency.entsoe.eu/content/static_content/Static%20content/web%20api/Guide.html#_authentication_and_authorisation) how to get a security token. You should also create a `.Renviron` file in your working directory with a security token and call it ENTSOE_PAT.
+Read [here](https://transparency.entsoe.eu/content/static_content/Static%20content/web%20api/Guide.html#_authentication_and_authorisation) how to get a security token. You should also create a `.Renviron` file in your working directory with a security token and call it ENTSOE_KEY.
 
 ```         
-ENTSOE_PAT = "your_security_token"
+ENTSOE_KEY = "your_security_token"
 ```
 
 ## Examples
