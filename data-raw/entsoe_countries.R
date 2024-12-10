@@ -6,7 +6,7 @@ entsoe_countries <- fs::path("data-raw",
   purrr::modify_if(is.character, trimws, which = "both") |>
   purrr::discard(~is.na(.x) |> all())
 
-setnames(entsoe_countries, c('COUNTRY', 'EIC_CODE'))
+data.table::setnames(entsoe_countries, c('COUNTRY', 'EIC_CODE'))
 
 # save the package data in the correct format
 usethis::use_data(entsoe_countries, overwrite = TRUE)
